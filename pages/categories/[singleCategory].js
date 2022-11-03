@@ -10,7 +10,7 @@ function BlogsByCategory({ blogs, selectedCategory }) {
 			<div className="grid md:grid-cols-2	">
 				{blogs.map((blog) => (
 					<div
-						className="blog p-4 m-2 shadow-sm	border border-gray-300	"
+						className="p-4 m-2 shadow-sm	border border-gray-300	"
 						key={blog.id}>
 						<div className="relative" style={{ minHeight: "250px" }}>
 							<Image
@@ -20,7 +20,7 @@ function BlogsByCategory({ blogs, selectedCategory }) {
 								style={{ objectFit: "cover" }}
 							/>
 						</div>
-						<h3 className="blog__title mt-4 mb-4">{blog.title}</h3>
+						<h3 className="mt-4 mb-4">{blog.title}</h3>
 						{blog.category.map((category, index) => (
 							<span
 								className="inline-block px-3 py-1 uppercase rounded-2xl border border-gray-300 mr-1 text-xs"
