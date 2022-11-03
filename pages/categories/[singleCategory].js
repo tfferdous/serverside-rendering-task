@@ -12,10 +12,12 @@ function BlogsByCategory({ blogs, selectedCategory }) {
 					<div
 						className="p-4 m-2 shadow-sm	border border-gray-300	"
 						key={blog.id}>
-						<div className="relative" style={{ minHeight: "250px" }}>
+						<div className="relative">
 							<Image
+								className="w-full"
 								src={blog.img}
-								fill={true}
+								height={300}
+								width={590}
 								alt=""
 								style={{ objectFit: "cover" }}
 							/>
