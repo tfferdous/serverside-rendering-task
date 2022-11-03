@@ -5,7 +5,7 @@ import styles from "../styles/Card.module.css";
 function Card({ data }) {
 	let { title, body, id } = data || {};
 	return (
-		<Link href={`/posts/${id}`}>
+		<Link href={`/${id}`}>
 			<div className={styles.card}>
 				<h4 className={styles.card__title}>{title}</h4>
 				<p className={styles.card__text}>{body}</p>
