@@ -7,7 +7,7 @@ function Card({ data }) {
 	return (
 		<Link href={`/${id}`}>
 			<div className={styles.card}>
-				<h4 className={styles.card__title}>{title}</h4>
+				<h2 className="text-xl mb-3 text-red-800 uppercase">{title}</h2>
 				<p className={styles.card__text}>{body}</p>
 				<p className={styles.id}>Id:{id}</p>
 			</div>
